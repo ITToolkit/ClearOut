@@ -414,11 +414,11 @@
     <div class="hero-inner">
       <p class="hero-eyebrow">Legal · Data practices</p>
       <h1>Privacy, clearly explained.</h1>
-      <p class="hero-meta">Last updated: 31 March 2026 &nbsp;·&nbsp; Effective date: 20 March 2026</p>
+      <p class="hero-meta">Last updated: 31 March 2026 &nbsp;·&nbsp; Effective date: 31 March 2026</p>
 
       <div class="tldr">
         <p class="tldr-label">Summary</p>
-        <p>ClearOut is designed to perform its core scanning and cleaning functions on your device. We do not sell your personal data, we do not use ClearOut for advertising, and we do not operate our own backend to receive your scan results or media files. Some purchase, licensing, update, and review-related functions are provided by Google Play and related Google services under their own terms and privacy policies.</p>
+        <p>ClearOut is designed to perform its core review, storage-insight, and cleaning-related functions on your device. We do not sell your personal data, we do not use ClearOut for advertising, and we do not operate our own ClearOut backend to receive your scan results, media files, or app-inventory results for our own services. Some purchase, licensing, update, and review-related functions are provided by Google Play and related Google services under their own terms and privacy policies.</p>
       </div>
     </div>
   </div>
@@ -436,7 +436,7 @@
       <div class="section">
         <p class="section-num">02 — Information used by the app</p>
         <h2>What ClearOut may access on your device</h2>
-        <p>ClearOut needs limited on-device access to provide features such as screenshot review, similar-photo review, large-file discovery, inactive app review, notification insights, usage heatmaps, storage insights, and optional Pro unlocks through Google Play. The app is designed to work without ads, without tracking profiles, and without sending your scan results to a ClearOut backend for our own services.</p>
+        <p>ClearOut needs limited on-device access to provide features such as screenshot review, similar-photo and duplicate-like image review, large-file discovery, inactive app review, notification insights, storage insights, and optional Pro unlocks through Google Play. The app is designed to work without ads, without tracking profiles, and without sending your scan results, media files, or installed-app inventory to a ClearOut backend for our own services.</p>
 
         <table class="data-table">
           <thead>
@@ -464,11 +464,11 @@
             </tr>
             <tr>
               <td>Notification activity by app</td>
-              <td>Used, where you manually enable notification access in Android settings, to count which apps send the most alerts so ClearOut can show notification insights. ClearOut is designed to count alerts by app rather than store notification message content.</td>
+              <td>Used, where you manually enable notification access in Android settings, to count which apps send the most alerts so ClearOut can show notification insights. ClearOut is designed to count alerts by app rather than persist notification message content.</td>
             </tr>
             <tr>
               <td>Installed app information</td>
-              <td>Used to list apps within the interface and support inactive app review. Android package visibility may also be used so ClearOut can inspect installed apps for cleaning-related features.</td>
+              <td>Used to list installed apps inside the interface and support app-related review features such as inactive app detection, app listings, and app size or app-presence checks where supported by Android. ClearOut also declares Android package visibility, including QUERY_ALL_PACKAGES, so the app can inspect installed apps for its core cleaning-related functionality.</td>
             </tr>
             <tr>
               <td>Storage usage statistics and local snapshots</td>
@@ -556,7 +556,7 @@
             <span class="perm-icon">📦</span>
             <div class="perm-body">
               <div class="perm-name">QUERY_ALL_PACKAGES</div>
-              <div class="perm-desc">Used so ClearOut can inspect installed apps for app-related review features such as inactive app detection and app listings.</div>
+              <div class="perm-desc">Used so ClearOut can inspect installed apps on the device for core app-related review features such as inactive app detection, app listings, app presence checks, and other cleaning-related app inventory functions.</div>
             </div>
           </li>
           <li class="perm-item">
@@ -574,6 +574,8 @@
             </div>
           </li>
         </ul>
+
+        <p><strong style="color: var(--text-1);">Important note about installed-app visibility:</strong> ClearOut declares <code style="color: var(--accent); font-family: 'DM Mono', monospace;">android.permission.QUERY_ALL_PACKAGES</code> because the app’s core user-facing functionality includes reviewing installed apps on the device for cleaning-related purposes, including inactive app review, app listings, and related installed-app checks. ClearOut does not state that this permission is used for advertising, analytics profiling, or selling app-inventory data.</p>
 
         <p>No permission is requested for tracking, advertising, or any purpose beyond the feature reasonably associated with that permission.</p>
       </div>
@@ -601,7 +603,7 @@
             </tr>
             <tr>
               <td>Recent storage snapshots and scan summaries</td>
-              <td>Used for storage trend calculations, fill-rate estimates, and in-app storage forecasts and recent storage summaries.</td>
+              <td>Used for storage trend calculations, fill-rate estimates, recent storage summaries, and in-app storage forecast features.</td>
             </tr>
             <tr>
               <td>Notification preferences</td>
@@ -632,7 +634,7 @@
       <div class="section">
         <p class="section-num">07 — Sharing and disclosures</p>
         <h2>When information may be shared</h2>
-        <p>We do not operate a ClearOut backend that receives your scan results, media files, or app-cleaning data for our own services.</p>
+        <p>We do not operate a ClearOut backend that receives your scan results, media files, notification contents, or installed-app inventory for our own services.</p>
         <p>However, certain functions necessarily involve platform providers. For example, purchases, licensing, update delivery, store listing interactions, and in-app review flows may involve Google Play or related Google services, which operate under their own legal terms and privacy documentation.</p>
         <p>We may also disclose information where required by applicable law, regulation, court order, or lawful governmental request.</p>
       </div>
@@ -660,7 +662,7 @@
             </tr>
             <tr>
               <td>Notifications</td>
-              <td>Turn optional notifications on or off in ClearOut or in system settings.</td>
+              <td>Turn optional reminders or status notifications on or off in ClearOut or in system settings.</td>
             </tr>
             <tr>
               <td>Local data</td>
@@ -699,7 +701,7 @@
 
         <div class="contact-card">
           <span class="contact-label">Privacy and support enquiries</span>
-          <a href="mailto:clearout.support@ittoolkit.app" class="contact-email">clearout.support@ittoolkit.app</a>
+          <a href="mailto:clearout.clearout.support@ittoolkit.app" class="contact-email">clearout.clearout.support@ittoolkit.app</a>
         </div>
       </div>
 
