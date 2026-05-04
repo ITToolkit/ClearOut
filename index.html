@@ -414,11 +414,11 @@
     <div class="hero-inner">
       <p class="hero-eyebrow">Legal · Data practices</p>
       <h1>Privacy, clearly explained.</h1>
-      <p class="hero-meta">Last updated: 10 April 2026 &nbsp;·&nbsp; Effective date: 10 April 2026</p>
+      <p class="hero-meta">Last updated: 4 May 2026 &nbsp;·&nbsp; Effective date: 4 May 2026</p>
 
       <div class="tldr">
         <p class="tldr-label">Summary</p>
-        <p>ClearOut is designed to perform its core review, storage-insight, and cleaning-related functions on your device. We do not sell your personal data, we do not use ClearOut for advertising, and we do not operate our own ClearOut backend to receive your scan results, media files, or app-inventory results for our own services. Some purchase, licensing, update, and review-related functions are provided by Google Play and related Google services under their own terms and privacy policies.</p>
+        <p>ClearOut is designed to perform its core review, storage-insight, and cleaning-related functions on your device. We do not sell your personal data, we do not use ClearOut for advertising, and we do not operate our own ClearOut backend to receive your scan results, media files, or app review results for our own services. Some purchase, licensing, update, and review-related functions are provided by Google Play and related Google services under their own terms and privacy policies.</p>
       </div>
     </div>
   </div>
@@ -430,13 +430,13 @@
         <p class="section-num">01 — Scope</p>
         <h2>Who this policy applies to</h2>
         <p>This privacy policy applies to the Android application <strong style="color: var(--text-1);">ClearOut</strong>. It explains what ClearOut may access on your device, why that access is needed, what the app stores locally, and how Google Play purchases and permissions work.</p>
-        <p>Unless otherwise stated, references to “ClearOut”, “we”, “our”, or “us” mean the publisher of the app, <strong style="color: var(--text-1);">ittoolkit</strong>. If your Play Console publisher name differs, replace that name with your exact developer or business identity so your legal pages and store listing match.</p>
+        <p>Unless otherwise stated, references to “ClearOut”, “we”, “our”, or “us” mean the publisher of the app, <strong style="color: var(--text-1);">ittoolkit</strong>.</p>
       </div>
 
       <div class="section">
         <p class="section-num">02 — Information used by the app</p>
         <h2>What ClearOut may access on your device</h2>
-        <p>ClearOut needs limited on-device access to provide features such as screenshot review, similar-photo and duplicate-like image review, large-file discovery, inactive app review, notification insights, storage insights, and optional Pro unlocks through Google Play. The app is designed to work without ads, without tracking profiles, and without sending your scan results, media files, or installed-app inventory to a ClearOut backend for our own services.</p>
+        <p>ClearOut needs limited on-device access to provide features such as screenshot review, similar-photo and duplicate-like image review, large-file discovery, inactive app review, notification insights, storage insights, and optional Pro unlocks through Google Play. The app is designed to work without ads, without tracking profiles, and without sending your scan results, media files, or app review results to a ClearOut backend for our own services.</p>
 
         <table class="data-table">
           <thead>
@@ -468,7 +468,7 @@
             </tr>
             <tr>
               <td>Installed app information</td>
-              <td>Used to list installed apps inside the interface and support app-related review features such as inactive app detection, app listings, and app size or app-presence checks where supported by Android. ClearOut also declares Android package visibility, including QUERY_ALL_PACKAGES, so the app can inspect installed apps for its core cleaning-related functionality.</td>
+              <td>Used only for limited, user-facing app review features such as inactive app suggestions and app storage insights, where supported by Android. ClearOut uses Android’s limited package visibility rules and focuses on launchable, user-facing apps rather than requesting broad visibility of all installed packages.</td>
             </tr>
             <tr>
               <td>Storage usage statistics and local snapshots</td>
@@ -476,7 +476,7 @@
             </tr>
             <tr>
               <td>Purchase status</td>
-              <td>Used to determine whether Pro features should be unlocked following a purchase or active subscription made through Google Play.</td>
+              <td>Used to determine whether Pro features should be unlocked following a Google Play purchase, such as a one-time Pro upgrade where configured.</td>
             </tr>
           </tbody>
         </table>
@@ -514,7 +514,7 @@
             <span class="perm-icon">🖼️</span>
             <div class="perm-body">
               <div class="perm-name">READ_MEDIA_IMAGES / READ_MEDIA_VIDEO / READ_MEDIA_AUDIO</div>
-              <div class="perm-desc">Used on supported Android versions to access media needed for duplicate photo detection, large-file scanning, screenshot review, and similar media-cleaning functions.</div>
+              <div class="perm-desc">Used on supported Android versions to access media needed for screenshot review, duplicate-like photo detection, large media/file review, and similar user-confirmed cleanup functions.</div>
             </div>
           </li>
           <li class="perm-item">
@@ -546,20 +546,6 @@
             </div>
           </li>
           <li class="perm-item">
-            <span class="perm-icon">🔔</span>
-            <div class="perm-body">
-              <div class="perm-name">POST_NOTIFICATIONS</div>
-              <div class="perm-desc">Used on supported Android versions if you allow notifications, so ClearOut can send optional reminders or status notifications.</div>
-            </div>
-          </li>
-          <li class="perm-item">
-            <span class="perm-icon">📦</span>
-            <div class="perm-body">
-              <div class="perm-name">QUERY_ALL_PACKAGES</div>
-              <div class="perm-desc">Used so ClearOut can inspect installed apps on the device for core app-related review features such as inactive app detection, app listings, app presence checks, and other cleaning-related app inventory functions.</div>
-            </div>
-          </li>
-          <li class="perm-item">
             <span class="perm-icon">📳</span>
             <div class="perm-body">
               <div class="perm-name">VIBRATE</div>
@@ -570,14 +556,13 @@
             <span class="perm-icon">💳</span>
             <div class="perm-body">
               <div class="perm-name">com.android.vending.BILLING</div>
-              <div class="perm-desc">Used to support purchases, subscriptions, entitlement checks, and restoration of Pro access through Google Play.</div>
+              <div class="perm-desc">Used to support Google Play purchases, entitlement checks, and restoration of Pro access.</div>
             </div>
           </li>
         </ul>
 
-        <p><strong style="color: var(--text-1);">Important note about installed-app visibility:</strong> ClearOut declares <code style="color: var(--accent); font-family: 'DM Mono', monospace;">android.permission.QUERY_ALL_PACKAGES</code> because the app’s core user-facing functionality includes reviewing installed apps on the device for cleaning-related purposes, including inactive app review, app listings, and related installed-app checks. ClearOut does not state that this permission is used for advertising, analytics profiling, or selling app-inventory data.</p>
-
-        <p>No permission is requested for tracking, advertising, or any purpose beyond the feature reasonably associated with that permission.</p>
+        <p><strong style="color: var(--text-1);">Important note about app visibility:</strong> ClearOut focuses on launchable, user-facing apps and does not request broad visibility of all installed packages. App-related insights are used only to support user-facing review features such as inactive-app suggestions and storage insights.</p>
+<p>No permission is requested for tracking, advertising, or any purpose beyond the feature reasonably associated with that permission.</p>
       </div>
 
       <div class="section">
@@ -595,7 +580,7 @@
           <tbody>
             <tr>
               <td>Purchase and Pro status</td>
-              <td>Used to remember whether Pro features should be available after a Google Play purchase or subscription check.</td>
+              <td>Used to remember whether Pro features should be available after a Google Play purchase check.</td>
             </tr>
             <tr>
               <td>Recent scan timestamps</td>
@@ -625,16 +610,16 @@
 
       <div class="section">
         <p class="section-num">06 — Purchases and Google Play</p>
-        <h2>How subscriptions and purchases work</h2>
-        <p>ClearOut may offer paid features through Google Play, including subscriptions and, where configured, one-time purchases. All payment processing, billing, refunds where available, subscription management, and related account handling are provided by Google Play and related Google services.</p>
-        <p>We do not receive or store your full payment card details through ClearOut. Product availability, pricing, billing periods, and any free trial configuration may vary by market and by the products configured in Google Play Console.</p>
+        <h2>How purchases work</h2>
+        <p>ClearOut may offer paid features through Google Play, such as a one-time Pro upgrade where configured. All payment processing, billing, refunds where available, purchase management, and related account handling are provided by Google Play and related Google services.</p>
+        <p>We do not receive or store your full payment card details through ClearOut. Product availability, pricing, and any refund options may vary by market and by the products configured in Google Play Console.</p>
         <p>If you purchase ClearOut Pro, the app may store a local entitlement flag or similar status information so Pro access can remain available without requiring repeated purchase checks every time you open the app.</p>
       </div>
 
       <div class="section">
         <p class="section-num">07 — Sharing and disclosures</p>
         <h2>When information may be shared</h2>
-        <p>We do not operate a ClearOut backend that receives your scan results, media files, notification contents, or installed-app inventory for our own services.</p>
+        <p>We do not operate a ClearOut backend that receives your scan results, media files, notification contents, or app review results for our own services.</p>
         <p>However, certain functions necessarily involve platform providers. For example, purchases, licensing, update delivery, store listing interactions, and in-app review flows may involve Google Play or related Google services (operated by Google LLC, based in the United States), which operate under their own legal terms and privacy documentation. For users in Australia: this constitutes disclosure of information to an overseas recipient, and that recipient operates under its own privacy framework.</p>
         <p>We may also disclose information where required by applicable law, regulation, court order, or lawful governmental request.</p>
       </div>
@@ -750,7 +735,7 @@
 
         <div class="contact-card">
           <span class="contact-label">Privacy and support enquiries</span>
-          <a href="/cdn-cgi/l/email-protection#60030c0501120f15144e030c0501120f15144e131510100f1214200914140f0f0c0b09144e011010" class="contact-email"><span class="__cf_email__" data-cfemail="6b08070e0a19041e1f4508070e0a19041e1f45181e1b1b04191f2b021f1f04040700021f450a1b1b">[email&#160;protected]</span></a>
+          <a href="mailto:clearout.clearout.support@ittoolkit.app" class="contact-email">clearout.clearout.support@ittoolkit.app</a>
         </div>
       </div>
 
